@@ -98,6 +98,11 @@ img {
     margin: 0;
     padding: 0;
   }
+
+  .strategy, .punctuality, .diligence{
+    margin-bottom: 72px;
+  }
+
   .text-list {
     margin: 0;
     color: var(--TextColor);
@@ -145,11 +150,15 @@ img {
   }
   .section-team {
     width: 260px;
-    margin-bottom: 72px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
   }
+
+.section-team:not(:last-child){
+  margin-bottom: 72px;
+}
+
   .header-list > .team {
     margin: 0;
     padding-top: 32px;
@@ -221,7 +230,9 @@ img {
   .customers-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
+    padding: 0;
   }
   .li-customers:nth-child(odd) {
     margin-right: 16px;
@@ -616,7 +627,24 @@ img {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .li-customers{
+    margin-right: 16px;
+  }
+  .li-customers:nth-child(-n + 4){
+    margin-bottom: 72px;
+  }
+  .footer {
+    background-color: var(--DarkColor);
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 
 @media (min-width: 1200px) {
