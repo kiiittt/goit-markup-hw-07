@@ -29,85 +29,95 @@
             aria-expanded="false"
             aria-controls="menu-container"
           >
-            <svg width="32px" height="22px"
-            aria-label="Переключатель мобильного меню"            
+            <svg
+              width="32px"
+              height="22px"
+              aria-label="Переключатель мобильного меню"
             >
               <use
                 class="menu-hamburger js-open-menu"
                 href="./images/icons.svg#icon-hamburger"
               ></use>
-
             </svg>
           </button>
 
-          <div class="menu-container is-open js-menu-container" id="menu-container">
+          <div class="menu-container js-menu-container" id="menu-container">
+            <div class="menu-menu">
+            <div class="menu-top">
             <div class="div-btn-menu">
-            <button type="button" class="menu-close-btn">
-              <svg width="24px" height="24px"
-            aria-label="Переключатель мобильного меню"  >
-              <use
-                class="menu-close js-close-menu"
-                href="./images/icons.svg#icon-close"
-              ></use>                
-              </svg>
-            </button></div>
-            <ul class="header-nav">
-              <li class="nav-link">
-                <a href="index.html" class="studio-link current">Studio</a>
-              </li>
-              <li class="nav-link">
-                <a href="portfolio.html" class="portfolio-link item"
-                  >Portfolio</a
+              <button type="button" class="menu-close-btn">
+                <svg
+                  width="24px"
+                  height="24px"
+                  aria-label="Переключатель мобильного меню"
                 >
-              </li>
-              <li class="nav-link">
-                <a href="" class="contacts-link item">Contacts</a>
-              </li>
-            </ul>
-
-            <ul class="header-link">
-              <li>
-                <a href="mailto:info@devstudio.com" class="mail item"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+110001111111" class="tel item"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-            <ul class="list-svg-menu">
-                  <li class="li-menu">
-                    <a href="" class="menu-icon">
-                      <svg class="menu-svg" height="24px" width="24px">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="li-menu">
-                    <a href="" class="menu-icon">
-                      <svg class="menu-svg"  height="24px" width="24px">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="li-menu">
-                    <a href="" class="menu-icon">
-                      <svg class="menu-svg" height="24px" width="24px">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="li-menu">
-                    <a href="" class="menu-icon">
-                      <svg class="menu-svg" height="24px" width="24px">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+                  <use
+                    class="menu-close js-close-menu"
+                    href="./images/icons.svg#icon-close"
+                  ></use>
+                </svg>
+              </button>
+            </div>              
+              <ul class="header-nav">
+                <li class="nav-link">
+                  <a href="index.html" class="studio-link current">Studio</a>
+                </li>
+                <li class="nav-link">
+                  <a href="portfolio.html" class="portfolio-link item"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-link">
+                  <a href="" class="contacts-link item">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-bottom">
+              <ul class="header-link">
+                <li class="li-mail">
+                  <a href="mailto:info@devstudio.com" class="mail item"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="li-tel">
+                  <a href="tel:+110001111111" class="tel item"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+              <ul class="list-svg-menu">
+                <li class="li-menu">
+                  <a href="" class="menu-icon">
+                    <svg class="menu-svg" height="24px" width="24px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="li-menu">
+                  <a href="" class="menu-icon">
+                    <svg class="menu-svg" height="24px" width="24px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="li-menu">
+                  <a href="" class="menu-icon">
+                    <svg class="menu-svg" height="24px" width="24px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="li-menu">
+                  <a href="" class="menu-icon">
+                    <svg class="menu-svg" height="24px" width="24px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
         </nav>
       </div>
     </header>
@@ -166,14 +176,30 @@
         <div class="container">
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="section-list">
-            <li><img srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
-              src="./images/img1.jpg" alt="Monitor" width="360" /></li>
             <li>
-              <img  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
-              src="./images/img2.jpg" alt="Application" width="360" />
+              <img
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="./images/img1.jpg"
+                alt="Monitor"
+                width="360"
+              />
             </li>
-            <li><img srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" 
-              src="./images/img3.jpg" alt="Telephone" width="360" /></li>
+            <li>
+              <img
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                src="./images/img2.jpg"
+                alt="Application"
+                width="360"
+              />
+            </li>
+            <li>
+              <img
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img3.jpg"
+                alt="Telephone"
+                width="360"
+              />
+            </li>
           </ul>
         </div>
       </section>
@@ -183,7 +209,7 @@
           <ul class="team-list">
             <li class="section-team">
               <img
-              srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
+                srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
                 src="./images/team1.jpg"
                 alt="Mark"
                 width="264"
@@ -226,7 +252,7 @@
             </li>
             <li class="section-team">
               <img
-              srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
+                srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
                 src="./images/team2.jpg"
                 alt="Tom"
                 width="264"
@@ -525,7 +551,8 @@
                 />
                 <span class="svg-modal">
                   <svg class="svg-modal" height="24px" width="18px">
-                    <use href="./images/icons.svg#icon-email"></use></svg></span>
+                    <use href="./images/icons.svg#icon-email"></use></svg
+                ></span>
               </div>
             </li>
             <li>
