@@ -180,6 +180,8 @@ img {
   flex-direction: column;
   padding: 0;
   margin-top: 0;
+    max-width: 360px;
+  width: 100%;
 }
 
 input {
@@ -200,6 +202,8 @@ input {
 
 .div-input {
   position: relative;
+    max-width: 360px;
+  width: 100%;
 }
 
 .input-modal {
@@ -883,6 +887,11 @@ input {
     padding-left: 0;
     list-style: none;
     align-self: center;
+  }
+
+  .li-modal{
+  max-width: 360px;
+  width: 100%;
   }
 
   .modal-item {
