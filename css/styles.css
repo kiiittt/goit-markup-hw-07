@@ -85,9 +85,6 @@ img {
     flex-direction: column;
     justify-content: center;
   }
-  .input-subscribe {
-    width: 95% !important;
-  }
   .subscribe-btn {
     margin: 0 auto;
   }
@@ -571,7 +568,8 @@ img {
     margin-bottom: 16px;
     padding-left: 16px;
     height: 40px;
-    width: 396px;
+    max-width: 396px;
+    width: 80vw;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -3522,7 +3520,6 @@ img {
 .subscribe-btn {
   display: flex;
   flex-direction: row;
-  margin-left: 24px;
   padding: 8px 24px 8px 24px;
   height: 40px;
   width: 165px;
